@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mah-coffee — Контакты</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <div class="navbar-logo-icon">&#9749;</div>
+        <span class="navbar-logo-text">mah-coffee</span>
+      </a>
+      <div class="navbar-links">
+        <a href="index.html" class="nav-btn">Главная</a>
+        <a href="menu.html" class="nav-btn">Меню</a>
+        <a href="gallery.html" class="nav-btn">Галерея</a>
+        <a href="contacts.html" class="nav-btn active">Контакты</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="page-header">
+      <div class="page-header-sub">Makhachkala Coffee</div>
+      <h1>СВЯЗАТЬСЯ</h1>
+      <p>Мы всегда рады общению с вами</p>
+    </div>
+
+    <div class="contacts-grid">
+      <!-- Контактная информация -->
+      <div>
+        <div class="art-card contact-info">
+          <h2>Наш адрес</h2>
+          <div class="contact-row">
+            <div class="contact-icon">&#128205;</div>
+            <div>
+              <p class="label">просп. Расула Гамзатова, 24</p>
+              <p class="sub">Махачкала, Респ. Дагестан</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">&#128222;</div>
+            <div>
+              <p style="font-weight:700;">+7 (988) 123-45-67</p>
+              <p class="open">Открыто: 08:00 – 23:00</p>
+            </div>
+          </div>
+          <div class="contact-row">
+            <div class="contact-icon">&#9993;</div>
+            <div>
+              <p style="font-weight:700;">hello@mah-coffee.ru</p>
+            </div>
+          </div>
+          <div class="contact-buttons">
+            <button class="art-btn-secondary">Instagram</button>
+            <button class="art-btn-primary" style="font-size:11px;">Открыть карту</button>
+          </div>
+        </div>
+
+        <div class="map-placeholder">
+          <span style="font-size:36px;">&#128506;</span>
+          <span>Карта скоро появится</span>
+        </div>
+      </div>
+
+      <!-- Форма -->
+      <div class="art-card contact-form">
+        <h2>Напишите нам</h2>
+        <p class="form-sub">Мы ответим в течение часа</p>
+
+        <form onsubmit="event.preventDefault(); alert('Спасибо, ' + this.username.value + '! Мы получили ваш запрос и свяжемся с вами по адресу ' + this.useremail.value + ' в ближайшее время.'); this.reset();">
+          <div class="form-group">
+            <label>Ваше имя</label>
+            <input type="text" name="username" placeholder="ИМЯ" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="useremail" placeholder="EMAIL" required>
+          </div>
+          <div class="form-group">
+            <label>Сообщение</label>
+            <textarea name="message" placeholder="ВАШЕ СООБЩЕНИЕ..."></textarea>
+          </div>
+          <button type="submit" class="art-btn-primary" style="width:100%;">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-logo">mah-coffee</div>
+    <div class="footer-tags">
+      <span>Dagestan</span>
+      <span>&bull;</span>
+      <span>Specialty Coffee</span>
+      <span>&bull;</span>
+      <span>Craft Roast</span>
+    </div>
+    <p class="footer-copy">&copy; 2024 Кофейня "mah-coffee" Махачкала. Все права защищены.</p>
+  </footer>
+
+</body>
+</html>
